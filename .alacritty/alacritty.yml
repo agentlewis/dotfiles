@@ -18,7 +18,7 @@ scrolling:
   faux_multiplier: 3
   auto_scroll: false
 
-tabspaces: 4
+tabspaces: 2
 
 font:
   normal:
@@ -30,7 +30,7 @@ font:
   italic:
     family: Hack
 
-  size: 9.5
+  size: 8
 
   offset:
     x: 0
@@ -40,7 +40,7 @@ font:
     x: 0
     y: 0
 
-  scale_with_dpi: false
+  scale_with_dpi: true
 
 render_timer: false
 

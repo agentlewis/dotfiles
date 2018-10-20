@@ -64,3 +64,11 @@ fi
 if [[ -x "$(command -v tmux)" && "$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))" = "alacritty" ]]; then
     [ -z "$TMUX" ] && { tmux attach-session || exec tmux && exit; }
 fi
+
+### Added by Zplugin's installer
+source '/home/dan/.zplugin/bin/zplugin.zsh'
+autoload -Uz _zplugin
+(( ${+_comps} )) && _comps[zplugin]=_zplugin
+zplugin ice as"program" pick"bin/git-dsf"
+zplugin light zdharma/zsh-diff-so-fancy
+### End of Zplugin's installer chunk
